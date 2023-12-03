@@ -1,7 +1,10 @@
 [project]
 name = "satsp"
 version = "0.0.1"
-dependencies = []
+dependencies = [
+    "tsplib95",
+    "requests"
+]
 description = "Simulated Anealing for Traveling Salesman Problem" 
 
 [tool.setuptools]
