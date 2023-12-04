@@ -3,7 +3,10 @@ name = "satsp"
 version = "0.0.1"
 dependencies = [
     "tsplib95",
-    "requests"
+    "requests",
+    "numpy",
+    "tqdm",
+    "matplotlib"
 ]
 description = "Simulated Anealing for Traveling Salesman Problem" 
 
