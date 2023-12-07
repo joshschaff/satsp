@@ -14,7 +14,8 @@ class Visualizer():
         self.instance = instance
 
 
-    def draw_path(self, permutatation: np.ndarray):
+    def draw_path(self, permutatation: np.ndarray, title: str, out: str):
+        plt.figure()
         X = []
         Y = []
         for i in range(len(permutatation)+1):
@@ -23,8 +24,11 @@ class Visualizer():
             X.append(coords[0])
             Y.append(coords[1])
 
-        plt.plot(X,Y)
-        plt.savefig("mygraph.png")
+        plt.plot(X,Y, 'bo-') # blue with circle marker and line
+        plt.xlabel("X")
+        plt.ylabel("Y")
+        plt.title(title)
+        plt.savefig(out)
 
 
 
